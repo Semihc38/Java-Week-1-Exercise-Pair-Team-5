@@ -21,13 +21,14 @@ Enter a series of Earth weights (space-separated): 98 235 185
 public class MartianWeight {
 
 	public static void main(String[] args) {
+
 		Scanner input = new Scanner(System.in);
 		
 		double earthWeight = 0;
 		double marsWeight = earthWeight * 0.378;
 
 		
-		System.out.println("Input Earth weight.");
+		System.out.println("Input Earth weight OR -1 when finished");
 		earthWeight = input.nextDouble();
 		while (earthWeight != -1) {
 			System.out.println(earthWeight + "lbs. on Earth is " + marsWeight +"lbs. on Mars");
@@ -36,9 +37,7 @@ public class MartianWeight {
 
 		}
 		System.out.println("done");
-
-
-
+		
 
 	}
 

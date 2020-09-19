@@ -16,20 +16,22 @@ import java.util.Scanner;
 public class MakeChange {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		
-		double bill = 0;
-		double change = 0;
-		double paid = 0;
-		
 
 		
-		System.out.println("input bill");
-		bill = input.nextDouble();
-		System.out.println("input paid");
-		paid = input.nextDouble();
-		change = paid - bill;
-		System.out.println(change);
+		Scanner input = new Scanner(System.in);
+		
+		double bill=0;
+		double paid=0;
+		double change=0;
+		
+		System.out.println("Please enter the amount of the bill: ");
+		bill=input.nextDouble();
+		System.out.println("Please enter the amount  tendered: ");
+		paid=input.nextDouble();
+		change=paid-bill;
+		System.out.println("Change: $"+ change);
+
+	
 		
 		
 		
